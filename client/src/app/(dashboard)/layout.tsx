@@ -1,4 +1,5 @@
 import Menu from "@/components/Menu";
+import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
 import React, { ReactNode } from "react";

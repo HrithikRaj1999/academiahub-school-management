@@ -119,7 +119,7 @@ type Props = {};
 
 const Menu = (props: Props) => {
   return (
-    <div className="mt-4  text-sm">
+    <div className="mt-4  sm:text-sm">
       {menuItems.map(({ title, items }) => (
         <div className="flex flex-col gap-2 mx-2" key={title}> 
           <span className="hidden md:block text-gray-800 font-light my-4 sm:text-center md:text-start">{title}</span>
