@@ -7,7 +7,7 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <div className="flex items-center justify-between p-4">
+    <div className="flex items-center  justify-between p-4 md:max-h-[10%] md:h-[10%]">
       {/* search bar */}
       <SearchInputBox />
 

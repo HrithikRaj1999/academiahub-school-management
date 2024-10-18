@@ -8,9 +8,9 @@ type Props = { children: ReactNode };
 
 function DashBoardLayout({ children }: Props) {
   return (
-    <div className="h-screen  flex">
+    <div className="h-screen flex md:scrollbar-hide ">
       {/* Side bar part */}
-      <div className="w-[14%] md:w[10%] lg:w-[20%] xl:w-[14%] ">
+      <div className="w-[14%] md:w[10%] lg:w-[20%] xl:w-[14%]  scrollbar-hide md:max-h-screen md:h-[100%] md:overflow-scroll">
         <Link
           href="/"
           className="flex items-center justify-center lg:justify-start gap-4 "
@@ -30,7 +30,7 @@ function DashBoardLayout({ children }: Props) {
         <Menu />
       </div>
       {/* Main part */}
-      <div className="w-[86%] md:w[90%] lg:w-[80%] xl:w-[86%] bg-[#f7f8fA] overflow-scroll" >
+      <div className="w-[86%] md:w[90%] lg:w-[80%] xl:w-[86%]  .scrollbar-hide bg-[#f7f8fA]  md:overflow-hidden md:max-h-screen md:h-[100%] sm:overflow-scroll " >
         <Navbar/>
         {children}
       </div>
